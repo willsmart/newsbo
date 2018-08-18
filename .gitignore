@@ -1,0 +1,5 @@
+/secrets
+/joined
+/secrets.sh
+node_modules
+*.pid

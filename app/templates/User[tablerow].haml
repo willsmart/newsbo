@@ -1,2 +1,4 @@
-.user{onclick:"${state.selectedUser=model.id}"}
-  User ${name} -- ${posts && posts.length ? `(${posts.length} ${posts.length==1?'post':'posts'})` : '(no posts yet)'}
+.user.title.clickable{onclick:"${state.selectedUser=id}"}
+  ${name}
+  .post-count
+    ${posts&&posts.length} ${posts&&posts.length==1?'post':'posts'}

@@ -1,0 +1,24 @@
+- App:
+    - id: 1
+      name: Newsbo
+      cookiePrefix: newsbo
+      users:
+        - id: name
+          name: Will
+          posts:
+            - id: body
+              body: >
+                This is just a crazy simple demo app for NoBo. It sets up a basic forum type deal, with users who can post.
+                To show the posts for a user, click their name.
+                Really, this one isn't about it being a great site, but more about how little work it was to do it.
+            - id: body
+              body: I hope you like what you see. Please check out the medium post
+        - id: name
+          name: Filler bot
+          posts:
+            - id: body
+              body: Just filling space 1
+            - id: body
+              body: Just filling space 2
+            - id: body
+              body: Just filling space 3

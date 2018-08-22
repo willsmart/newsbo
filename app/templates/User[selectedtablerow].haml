@@ -1,3 +1,4 @@
-.selected-user{onclick: "${delete state.selectedUser}"}
-  User ${name}'s posts
+.user.selected
+  .title.clickable{onclick: "${delete state.selectedUser}"}
+    ${name}'s posts...
   .posts-model-child{variant: "tablerow"}

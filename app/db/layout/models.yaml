@@ -1,0 +1,11 @@
+# relationship tree and model properties
+app(App):
+  name(string): { default: 'Newsbo' }
+
+  # each app has zero or more users, each user has an app
+  ~<users(User):
+    name(string): {} # users have names
+
+    # each user has zero or more posts, each post has an author
+    author~<posts(Post):
+      body(string): {} # posts have body text

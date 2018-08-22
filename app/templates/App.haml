@@ -1,0 +1,6 @@
+.app
+    %h2
+        Welcome to ${name}
+    %h4
+        These are the users...
+        .users-model-child{variant: "${state.selectedUser==model.id ? 'selectedtablerow' : 'tablerow'}"}

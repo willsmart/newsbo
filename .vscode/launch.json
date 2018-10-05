@@ -8,8 +8,16 @@
       "type": "node",
       "request": "launch",
       "name": "Update templates",
-      "program": "${workspaceFolder}/joined/tools/js/mains/update-db-templates.js",
+      "program": "${workspaceFolder}/joined/tools/js/mains/db/update-db-templates.js",
       "args": [],
+      "cwd": "${workspaceFolder}/joined"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Update db schema",
+      "program": "${workspaceFolder}/joined/tools/js/mains/db/update-db-schema.js",
+      "args": ["dryRun=0"],
       "cwd": "${workspaceFolder}/joined"
     },
     {

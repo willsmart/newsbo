@@ -1,4 +1,6 @@
 .user.selected
   .title.clickable{onclick: "${delete state.selectedUser}"}
     ${name}'s posts...
+  .clickable{onclick:'${newrow("Post").body="hello"}'}
+    Add post
   .posts-model-child{variant: "tablerow"}

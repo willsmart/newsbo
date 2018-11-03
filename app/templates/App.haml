@@ -3,4 +3,4 @@
         Welcome to ${name}
     %h4
         These are the users...
-    .users-model-child{variant: "${posts && posts.length ? (state.selectedUser==id ? 'selectedtablerow' : 'tablerow') : 'nopoststablerow'}"}
+    .users-model-child(child-variant="${posts && posts.length ? (state.selectedUser==id ? 'selectedtablerow' : 'tablerow') : 'nopoststablerow'}")

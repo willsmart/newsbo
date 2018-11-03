@@ -1,4 +1,4 @@
-.user.title.clickable{onclick:"${state.selectedUser=id}"}
+.user.title.clickable(onclick="${state.selectedUser=id}" hi="${id}")
   ${name}
   .post-count
     ${posts&&posts.length} ${posts&&posts.length==1?'post':'posts'}

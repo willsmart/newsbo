@@ -6,7 +6,7 @@
     {
       "label": "Bundle",
       "type": "shell",
-      "command": "sleep 4;bin/bundle-client",
+      "command": "sleep 4 ; bin/bundle-client && afplay /System/Library/Sounds/Hero.aiff",
       "problemMatcher": [],
       "options": {
         "cwd": "${workspaceRoot}/joined"

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   color: #444;
   background-color: white; }
@@ -26,8 +25,24 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #fcfafa;
-  border: 3px solid #54494b;
-  border-radius: 8px; }
+  font-family: fantasy; }
+  .app .app-title-text {
+    font-family: monospace;
+    font-variant: petite-caps;
+    font-size: 40px; }
+  .app .title-text {
+    font-family: monospace;
+    font-size: 40px; }
+  .app .heading-text {
+    font-family: monospace;
+    font-variant: petite-caps;
+    font-size: 20px; }
+  .app .body-text {
+    font-family: monospace;
+    font-size: 20px; }
+  .app .small-text {
+    font-family: monospace;
+    font-size: 16px; }
   .app h2,
   .app h4 {
     text-align: center; }
@@ -41,9 +56,17 @@ body {
   .app .user {
     align-self: baseline;
     width: 100%;
+    display: flex;
     font-size: 1.5rem; }
-    .app .user::before {
-      content: '•'; }
+    .app .user .expander-character {
+      margin-right: 10px;
+      align-self: center;
+      padding-top: 0.35em; }
+    .app .user .post-count {
+      align-self: center;
+      whitespace: nowrap; }
+    .app .user .title {
+      flex-grow: 1; }
     .app .user .post-count {
       float: right;
       font-size: 1rem;

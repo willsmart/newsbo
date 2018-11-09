@@ -41,8 +41,34 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: $light-bg;
-  border: 3px solid $brown-bg;
-  border-radius: 8px;
+  font-family: fantasy;
+
+  .app-title-text {
+    font-family: monospace;
+    font-variant: petite-caps;
+    font-size: 40px;
+  }
+
+  .title-text {
+    font-family: monospace;
+    font-size: 40px;
+  }
+
+  .heading-text {
+    font-family: monospace;
+    font-variant: petite-caps;
+    font-size: 20px;
+  }
+
+  .body-text {
+    font-family: monospace;
+    font-size: 20px;
+  }
+
+  .small-text {
+    font-family: monospace;
+    font-size: 16px;
+  }
 
   h2,
   h4 {
@@ -62,12 +88,26 @@ body {
 
   .user {
     align-self: baseline;
-    &::before {
-      content: '•';
-    }
     width: 100%;
 
+    display: flex;
+
     font-size: 1.5rem;
+
+    .expander-character {
+      margin-right: 10px;
+      align-self: center;
+      padding-top: 0.35em;
+    }
+
+    .post-count {
+      align-self: center;
+      whitespace: nowrap;
+    }
+
+    .title {
+      flex-grow: 1;
+    }
 
     .post-count {
       float: right;

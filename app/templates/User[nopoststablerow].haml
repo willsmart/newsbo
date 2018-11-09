@@ -1,8 +1,7 @@
 .user.title
-  ${name}
-  .post-count
+  .title.heading-text<
+    %include(variant="draggabletextfield" key_field="${name}")
+  .small-text.post-count
     (no posts yet)
-  .clickable{onclick:'${newrow("Post").body="hello"}'}
+  .small-text.clickable(onclick="${newrow('Post',{body: 'hello', author: [id]})}")
     Add post
-  .clickable{onclick:'${name="Betty"}'}
-    I am Bety

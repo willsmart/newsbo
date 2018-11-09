@@ -1,6 +1,10 @@
 .user.selected
-  .title.clickable{onclick: "${delete state.selectedUser}"}
-    ${name}'s posts...
-  .clickable{onclick:'${newrow("Post").body="hello"}'}
+  %span.clickable.expander-character(onclick="${delete state[id]}")<
+    ⊖
+  .title.nobo-dragee(drop-event="${if (this['text/plain']) name=this['text/plain']}")
+    .heading-text<
+      %include(variant="draggabletextfield" key_field="${name}")
+      's posts....
+  .small-text.clickable(onclick="${newrow('Post',{body: 'hello', author: [id]})}")
     Add post
-  .posts-model-child(child-variant= "tablerow")
+  .posts-model-child(child-variant="tablerow")

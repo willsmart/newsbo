@@ -7,5 +7,9 @@ app(App):
     name(string): {} # users have names
 
     # each user has zero or more posts, each post has an author
-    author~<posts(Post):
+    author~<allPosts(Post):
       body(string): {} # posts have body text
+      deletedAt(datetime): {}
+
+    posts([Post]):
+      get: 'allPosts.filter(post=>!post.deletedAt)'

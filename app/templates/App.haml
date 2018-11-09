@@ -1,6 +1,6 @@
 .app
-    %h2
+    %h2.app-title-text
         Welcome to ${name}
-    %h4
+    %h4.title-text
         These are the users...
-    .users-model-child(child-variant="${posts && posts.length ? (state.selectedUser==id ? 'selectedtablerow' : 'tablerow') : 'nopoststablerow'}")
+    .users-model-child(child-variant="${posts && posts.length ? (state[id] ? 'selectedtablerow' : 'tablerow') : 'nopoststablerow'}")

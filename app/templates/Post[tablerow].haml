@@ -1,4 +1,5 @@
 .post<
-  %include{variant:'editablemodelfield', key_field: '${body}'}
-  .delete.clickable{onclick:'${model["*"]=undefined}'}
+  .body-text<
+    %include(variant="draggabletextfield" key_field="${body}")
+  .small-text.delete.clickable(onclick="${deletedAt='now'}")
     delete

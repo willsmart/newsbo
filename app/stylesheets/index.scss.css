@@ -9,11 +9,15 @@ body {
     text-decoration: underline; }
 
 .editable {
-  display: inline-block; }
+  display: inline-block;
+  cursor: text; }
   .editable:focus {
     outline: none;
     border: 1px dotted #042a2b;
     border-radius: 5px; }
+
+.nobo-draggable {
+  cursor: grab; }
 
 .app {
   min-height: 100vh;
@@ -57,16 +61,24 @@ body {
     align-self: baseline;
     width: 100%;
     display: flex;
+    align-items: center;
     font-size: 1.5rem; }
     .app .user .expander-character {
       margin-right: 10px;
-      align-self: center;
       padding-top: 0.35em; }
+      .app .user .expander-character.top {
+        align-self: flex-start; }
     .app .user .post-count {
-      align-self: center;
-      whitespace: nowrap; }
+      white-space: nowrap; }
     .app .user .title {
       flex-grow: 1; }
+    .app .user .user-body {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column; }
+    .app .user .user-details {
+      display: flex;
+      align-items: center; }
     .app .user .post-count {
       float: right;
       font-size: 1rem;

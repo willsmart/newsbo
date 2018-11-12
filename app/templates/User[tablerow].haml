@@ -3,5 +3,5 @@
     ⊕
   .title.heading-text<
     %include(variant="draggabletextfield" key_field="${name}")
-  .small-text.post-count
+  .small-text.clickable.post-count(onclick="${state[id]=true}")
     ${posts&&posts.length} ${posts&&posts.length==1?'post':'posts'}

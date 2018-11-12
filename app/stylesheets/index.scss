@@ -29,6 +29,11 @@ body {
     border: 1px dotted $dark-col-bg;
     border-radius: 5px;
   }
+  cursor: text;
+}
+
+.nobo-draggable {
+  cursor: grab;
 }
 
 .app {
@@ -91,22 +96,35 @@ body {
     width: 100%;
 
     display: flex;
+    align-items: center;
 
     font-size: 1.5rem;
 
     .expander-character {
+      &.top {
+        align-self: flex-start;
+      }
       margin-right: 10px;
-      align-self: center;
       padding-top: 0.35em;
     }
 
     .post-count {
-      align-self: center;
-      whitespace: nowrap;
+      white-space: nowrap;
     }
 
     .title {
       flex-grow: 1;
+    }
+
+    .user-body {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .user-details {
+      display: flex;
+      align-items: center;
     }
 
     .post-count {
